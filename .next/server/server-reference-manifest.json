@@ -1,0 +1,102 @@
+{
+  "node": {
+    "180a77f201712254050af857c473da2102eb3051": {
+      "workers": {
+        "app/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Frosedevelopement%2FDesktop%2FCode%20Equity%20Website%2Fsrc%2Flib%2Faction.js%22%2C%5B%22addUser%22%2C%22addPost%22%2C%22deleteUser%22%2C%22deletePost%22%2C%22handleLogout%22%2C%22register%22%2C%22handleGithubLogin%22%2C%22login%22%5D%5D%5D&__client_imported__=true!",
+        "app/about/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Frosedevelopement%2FDesktop%2FCode%20Equity%20Website%2Fsrc%2Flib%2Faction.js%22%2C%5B%22addUser%22%2C%22addPost%22%2C%22deleteUser%22%2C%22deletePost%22%2C%22handleLogout%22%2C%22register%22%2C%22handleGithubLogin%22%2C%22login%22%5D%5D%5D&__client_imported__=true!",
+        "app/contact/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Frosedevelopement%2FDesktop%2FCode%20Equity%20Website%2Fsrc%2Flib%2Faction.js%22%2C%5B%22addUser%22%2C%22addPost%22%2C%22deleteUser%22%2C%22deletePost%22%2C%22handleLogout%22%2C%22register%22%2C%22handleGithubLogin%22%2C%22login%22%5D%5D%5D&__client_imported__=true!"
+      },
+      "layer": {
+        "app/page": "action-browser",
+        "app/about/page": "action-browser",
+        "app/contact/page": "action-browser"
+      }
+    },
+    "39ea8063dd774f396843e6bb07cce3e0dd309adf": {
+      "workers": {
+        "app/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Frosedevelopement%2FDesktop%2FCode%20Equity%20Website%2Fsrc%2Flib%2Faction.js%22%2C%5B%22addUser%22%2C%22addPost%22%2C%22deleteUser%22%2C%22deletePost%22%2C%22handleLogout%22%2C%22register%22%2C%22handleGithubLogin%22%2C%22login%22%5D%5D%5D&__client_imported__=true!",
+        "app/about/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Frosedevelopement%2FDesktop%2FCode%20Equity%20Website%2Fsrc%2Flib%2Faction.js%22%2C%5B%22addUser%22%2C%22addPost%22%2C%22deleteUser%22%2C%22deletePost%22%2C%22handleLogout%22%2C%22register%22%2C%22handleGithubLogin%22%2C%22login%22%5D%5D%5D&__client_imported__=true!",
+        "app/contact/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Frosedevelopement%2FDesktop%2FCode%20Equity%20Website%2Fsrc%2Flib%2Faction.js%22%2C%5B%22addUser%22%2C%22addPost%22%2C%22deleteUser%22%2C%22deletePost%22%2C%22handleLogout%22%2C%22register%22%2C%22handleGithubLogin%22%2C%22login%22%5D%5D%5D&__client_imported__=true!"
+      },
+      "layer": {
+        "app/page": "action-browser",
+        "app/about/page": "action-browser",
+        "app/contact/page": "action-browser"
+      }
+    },
+    "6e9a0d44375cf8b8ba6748a8c2faae855d5d8f8e": {
+      "workers": {
+        "app/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Frosedevelopement%2FDesktop%2FCode%20Equity%20Website%2Fsrc%2Flib%2Faction.js%22%2C%5B%22addUser%22%2C%22addPost%22%2C%22deleteUser%22%2C%22deletePost%22%2C%22handleLogout%22%2C%22register%22%2C%22handleGithubLogin%22%2C%22login%22%5D%5D%5D&__client_imported__=true!",
+        "app/about/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Frosedevelopement%2FDesktop%2FCode%20Equity%20Website%2Fsrc%2Flib%2Faction.js%22%2C%5B%22addUser%22%2C%22addPost%22%2C%22deleteUser%22%2C%22deletePost%22%2C%22handleLogout%22%2C%22register%22%2C%22handleGithubLogin%22%2C%22login%22%5D%5D%5D&__client_imported__=true!",
+        "app/contact/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Frosedevelopement%2FDesktop%2FCode%20Equity%20Website%2Fsrc%2Flib%2Faction.js%22%2C%5B%22addUser%22%2C%22addPost%22%2C%22deleteUser%22%2C%22deletePost%22%2C%22handleLogout%22%2C%22register%22%2C%22handleGithubLogin%22%2C%22login%22%5D%5D%5D&__client_imported__=true!"
+      },
+      "layer": {
+        "app/page": "action-browser",
+        "app/about/page": "action-browser",
+        "app/contact/page": "action-browser"
+      }
+    },
+    "8a70bb3ddb7fd8670457ab51e939a8395746ce69": {
+      "workers": {
+        "app/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Frosedevelopement%2FDesktop%2FCode%20Equity%20Website%2Fsrc%2Flib%2Faction.js%22%2C%5B%22addUser%22%2C%22addPost%22%2C%22deleteUser%22%2C%22deletePost%22%2C%22handleLogout%22%2C%22register%22%2C%22handleGithubLogin%22%2C%22login%22%5D%5D%5D&__client_imported__=true!",
+        "app/about/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Frosedevelopement%2FDesktop%2FCode%20Equity%20Website%2Fsrc%2Flib%2Faction.js%22%2C%5B%22addUser%22%2C%22addPost%22%2C%22deleteUser%22%2C%22deletePost%22%2C%22handleLogout%22%2C%22register%22%2C%22handleGithubLogin%22%2C%22login%22%5D%5D%5D&__client_imported__=true!",
+        "app/contact/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Frosedevelopement%2FDesktop%2FCode%20Equity%20Website%2Fsrc%2Flib%2Faction.js%22%2C%5B%22addUser%22%2C%22addPost%22%2C%22deleteUser%22%2C%22deletePost%22%2C%22handleLogout%22%2C%22register%22%2C%22handleGithubLogin%22%2C%22login%22%5D%5D%5D&__client_imported__=true!"
+      },
+      "layer": {
+        "app/page": "action-browser",
+        "app/about/page": "action-browser",
+        "app/contact/page": "action-browser"
+      }
+    },
+    "a947cfd9bf868eb065369de47fd498ac1403a173": {
+      "workers": {
+        "app/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Frosedevelopement%2FDesktop%2FCode%20Equity%20Website%2Fsrc%2Flib%2Faction.js%22%2C%5B%22addUser%22%2C%22addPost%22%2C%22deleteUser%22%2C%22deletePost%22%2C%22handleLogout%22%2C%22register%22%2C%22handleGithubLogin%22%2C%22login%22%5D%5D%5D&__client_imported__=true!",
+        "app/about/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Frosedevelopement%2FDesktop%2FCode%20Equity%20Website%2Fsrc%2Flib%2Faction.js%22%2C%5B%22addUser%22%2C%22addPost%22%2C%22deleteUser%22%2C%22deletePost%22%2C%22handleLogout%22%2C%22register%22%2C%22handleGithubLogin%22%2C%22login%22%5D%5D%5D&__client_imported__=true!",
+        "app/contact/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Frosedevelopement%2FDesktop%2FCode%20Equity%20Website%2Fsrc%2Flib%2Faction.js%22%2C%5B%22addUser%22%2C%22addPost%22%2C%22deleteUser%22%2C%22deletePost%22%2C%22handleLogout%22%2C%22register%22%2C%22handleGithubLogin%22%2C%22login%22%5D%5D%5D&__client_imported__=true!"
+      },
+      "layer": {
+        "app/page": "action-browser",
+        "app/about/page": "action-browser",
+        "app/contact/page": "action-browser"
+      }
+    },
+    "a9dbac1320891e44efc801571bb1f785fa62fe39": {
+      "workers": {
+        "app/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Frosedevelopement%2FDesktop%2FCode%20Equity%20Website%2Fsrc%2Flib%2Faction.js%22%2C%5B%22addUser%22%2C%22addPost%22%2C%22deleteUser%22%2C%22deletePost%22%2C%22handleLogout%22%2C%22register%22%2C%22handleGithubLogin%22%2C%22login%22%5D%5D%5D&__client_imported__=true!",
+        "app/about/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Frosedevelopement%2FDesktop%2FCode%20Equity%20Website%2Fsrc%2Flib%2Faction.js%22%2C%5B%22addUser%22%2C%22addPost%22%2C%22deleteUser%22%2C%22deletePost%22%2C%22handleLogout%22%2C%22register%22%2C%22handleGithubLogin%22%2C%22login%22%5D%5D%5D&__client_imported__=true!",
+        "app/contact/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Frosedevelopement%2FDesktop%2FCode%20Equity%20Website%2Fsrc%2Flib%2Faction.js%22%2C%5B%22addUser%22%2C%22addPost%22%2C%22deleteUser%22%2C%22deletePost%22%2C%22handleLogout%22%2C%22register%22%2C%22handleGithubLogin%22%2C%22login%22%5D%5D%5D&__client_imported__=true!"
+      },
+      "layer": {
+        "app/page": "action-browser",
+        "app/about/page": "action-browser",
+        "app/contact/page": "action-browser"
+      }
+    },
+    "b928e214c4431a49e72fb95c6d4ae2cdee1b025a": {
+      "workers": {
+        "app/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Frosedevelopement%2FDesktop%2FCode%20Equity%20Website%2Fsrc%2Flib%2Faction.js%22%2C%5B%22addUser%22%2C%22addPost%22%2C%22deleteUser%22%2C%22deletePost%22%2C%22handleLogout%22%2C%22register%22%2C%22handleGithubLogin%22%2C%22login%22%5D%5D%5D&__client_imported__=true!",
+        "app/about/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Frosedevelopement%2FDesktop%2FCode%20Equity%20Website%2Fsrc%2Flib%2Faction.js%22%2C%5B%22addUser%22%2C%22addPost%22%2C%22deleteUser%22%2C%22deletePost%22%2C%22handleLogout%22%2C%22register%22%2C%22handleGithubLogin%22%2C%22login%22%5D%5D%5D&__client_imported__=true!",
+        "app/contact/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Frosedevelopement%2FDesktop%2FCode%20Equity%20Website%2Fsrc%2Flib%2Faction.js%22%2C%5B%22addUser%22%2C%22addPost%22%2C%22deleteUser%22%2C%22deletePost%22%2C%22handleLogout%22%2C%22register%22%2C%22handleGithubLogin%22%2C%22login%22%5D%5D%5D&__client_imported__=true!"
+      },
+      "layer": {
+        "app/page": "action-browser",
+        "app/about/page": "action-browser",
+        "app/contact/page": "action-browser"
+      }
+    },
+    "cb780a2a5eb828363146db4e738169f8491c9d1c": {
+      "workers": {
+        "app/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Frosedevelopement%2FDesktop%2FCode%20Equity%20Website%2Fsrc%2Flib%2Faction.js%22%2C%5B%22addUser%22%2C%22addPost%22%2C%22deleteUser%22%2C%22deletePost%22%2C%22handleLogout%22%2C%22register%22%2C%22handleGithubLogin%22%2C%22login%22%5D%5D%5D&__client_imported__=true!",
+        "app/about/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Frosedevelopement%2FDesktop%2FCode%20Equity%20Website%2Fsrc%2Flib%2Faction.js%22%2C%5B%22addUser%22%2C%22addPost%22%2C%22deleteUser%22%2C%22deletePost%22%2C%22handleLogout%22%2C%22register%22%2C%22handleGithubLogin%22%2C%22login%22%5D%5D%5D&__client_imported__=true!",
+        "app/contact/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Frosedevelopement%2FDesktop%2FCode%20Equity%20Website%2Fsrc%2Flib%2Faction.js%22%2C%5B%22addUser%22%2C%22addPost%22%2C%22deleteUser%22%2C%22deletePost%22%2C%22handleLogout%22%2C%22register%22%2C%22handleGithubLogin%22%2C%22login%22%5D%5D%5D&__client_imported__=true!"
+      },
+      "layer": {
+        "app/page": "action-browser",
+        "app/about/page": "action-browser",
+        "app/contact/page": "action-browser"
+      }
+    }
+  },
+  "edge": {},
+  "encryptionKey": "/PtJxxjW69+Tbgsv/msi1BPxkp2TGUw5HTyC6d906Uw="
+}
