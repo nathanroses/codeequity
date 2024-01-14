@@ -1,4 +1,4 @@
-// File: /Users/rosedevelopement/Desktop/Code Equity Website/src/app/about/page.jsx
+// File: /Users/rosedevelopement/Desktop/Code Equity LLC/Code Equity Website/src/app/about/page.jsx
 import * as entry from '../../../../src/app/about/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
