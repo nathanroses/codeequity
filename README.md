@@ -1,4 +1,6 @@
-## Getting Started
+## Code Equity
+
+This website is for code equity a company that focus on evaluating code
 
 First, install the dependencies:
 
