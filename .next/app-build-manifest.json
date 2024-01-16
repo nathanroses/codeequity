@@ -33,17 +33,11 @@
       "static/css/app/about/page.css",
       "static/chunks/app/about/page.js"
     ],
-    "/contact/page": [
+    "/system/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/css/app/contact/page.css",
-      "static/chunks/app/contact/page.js"
-    ],
-    "/(auth)/login/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/(auth)/login/page.css",
-      "static/chunks/app/(auth)/login/page.js"
+      "static/css/app/system/page.css",
+      "static/chunks/app/system/page.js"
     ]
   }
 }

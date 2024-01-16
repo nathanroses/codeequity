@@ -1,0 +1,95 @@
+/*!******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/.pnpm/next@14.0.4_react-dom@18.2.0_react@18.2.0/node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[2]!./node_modules/.pnpm/next@14.0.4_react-dom@18.2.0_react@18.2.0/node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[3]!./src/app/system/system.module.css ***!
+  \******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.system_container__RHwk8 {
+  display: flex;
+  gap: 80px; /* Reduced gap for a tighter layout */
+}
+
+.system_textContainer__MJ3fy {
+  flex: 1 1;
+  display: flex;
+  flex-direction: column;
+  gap: 30px; /* Reduced gap between elements */
+}
+
+.system_subtitle__lEEDp {
+  color: var(--btn);
+  font-size: 22px; /* Adjusted font size */
+  margin-bottom: 15px; /* Added space below subtitle */
+}
+
+.system_title__tuZ55 {
+  font-size: 48px; /* Adjusted font size */
+  line-height: 1.2; /* Adjusted line height for better readability */
+  padding: 10px 0; /* Adjusted padding */
+}
+
+.system_desc__F0J1c {
+  font-size: 18px; /* Adjusted font size */
+  font-weight: 300;
+  line-height: 1.5; /* Improved line spacing */
+}
+
+.system_boxes__6cAzv {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.system_box__u1CGA {
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* Adjusted gap between items */
+  text-align: center; /* Centered text in box */
+}
+
+.system_box__u1CGA h2 {
+  color: var(--btn);
+  font-size: 26px; /* Adjusted font size */
+  font-weight: bold;
+}
+
+.system_box__u1CGA p {
+  font-size: 16px; /* Adjusted font size */
+  color: #ffffff;
+}
+
+.system_stepDesc__jQ5uQ {
+  font-size: 13px; /* Adjusted font size */
+  color: #414cc1;
+  font-weight: 300;
+  line-height: 1.5; /* Improved line spacing */
+}
+
+.system_imgContainer__t78zs {
+  flex: 1 1;
+  position: relative;
+}
+
+.system_img__4y0JF {
+  object-fit: contain;
+}
+
+@media (max-width: 768px) {
+  .system_container__RHwk8 {
+    flex-direction: column;
+    text-align: center;
+    gap: 50px; /* Adjusted gap for mobile view */
+  }
+
+  .system_boxes__6cAzv {
+    flex-direction: column;
+    gap: 40px; /* Adjusted gap for mobile view */
+  }
+
+  .system_textContainer__MJ3fy, .system_imgContainer__t78zs {
+    align-items: center;
+  }
+
+  .system_title__tuZ55, .system_desc__F0J1c {
+    text-align: center;
+  }
+}
+

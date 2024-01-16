@@ -12,16 +12,16 @@ const links = [
     path: "/",
   },
   {
-    title: "Blueprint",
+    title: "About",
     path: "/about",
   },
   {
-    title: "Submit Evaluation",
-    path: "/contact",
+    title: "System",
+    path: "/system",
   },
   {
-    title: "Updates",
-    path: "/blog",
+    title: "Evaluation",
+    path: "/contact",
   },
 ];
 
@@ -46,7 +46,7 @@ const Links = ({session}) => {
             </form>
           </>
         ) : (
-          <NavLink item={{ title: "Login", path: "/login" }} />
+          <NavLink item={{ title: "Client Login", path: "/login" }} />
         )}
       </div>
       <Image

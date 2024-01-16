@@ -10,8 +10,8 @@ const Home = () => {
         Code Equity is the first to offer precise evaluations of digital assets, ensuring investors make informed decisions with confidence.
         </p>
         <div className={styles.buttons}>
+          <button className={styles.button}>Submit Evaluation</button>
           <button className={styles.button}>Learn More</button>
-          <button className={styles.button}>Contact</button>
         </div>
         <div className={styles.brands}>
           <Image src="/brands.png" alt="" fill className={styles.brandImg}/>

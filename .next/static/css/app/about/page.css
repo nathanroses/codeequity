@@ -1,0 +1,66 @@
+/*!****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/.pnpm/next@14.0.4_react-dom@18.2.0_react@18.2.0/node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[2]!./node_modules/.pnpm/next@14.0.4_react-dom@18.2.0_react@18.2.0/node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[3]!./src/app/about/about.module.css ***!
+  \****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.about_container__Ucmgi {
+  display: flex;
+  gap: 100px;
+}
+
+.about_textContainer__N2kg2 {
+  flex: 1 1;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.about_subtitle__M_O2E{
+  color:var(--btn)
+}
+
+.about_title__ZvvJk{
+  font-size: 54px;
+  padding: 15px;
+}
+
+.about_desc__gAGSd{
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.about_boxes__ZPQRG{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.about_box__DCNVj{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.about_box__DCNVj h1{
+  color: var(--btn);
+}
+
+.about_imgContainer__v1CmT {
+  flex: 1 1;
+  position: relative;
+}
+
+.about_img__JYzyZ{
+  object-fit: contain;
+}
+
+@media (max-width: 768px) {
+  .about_container__Ucmgi {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about_boxes__ZPQRG{
+    flex-direction: column;
+    gap: 50px;
+  }
+}
