@@ -20,23 +20,18 @@ const SystemPage = () => {
     <div className={styles.box}>
       <h2>Step 1</h2>
       <p>Send Us Your Code</p>
-      <p className={styles.stepDesc}>
-        Begin by submitting your code to us. Our system is designed for ease of use, ensuring a smooth start to your evaluation journey.
-      </p>
     </div>
     <div className={styles.box}>
       <h2>Step 2</h2>
-      <p>Intelligent Grading and Expert Review</p>
-      <p className={styles.stepDesc}>
-        Our Code Equity Intelligence Grading System, along with our Board of AI Directors and real code experts, meticulously analyze your code, ensuring a balanced evaluation by both AI and human expertise.
-      </p>
+      <p>Reviewed by Intelligent Grading System w/ Expert Review</p>
     </div>
     <div className={styles.box}>
       <h2>Step 3</h2>
       <p>Receive Your Code Evaluation</p>
-      <p className={styles.stepDesc}>
-        You receive a comprehensive grade, alongside valuable insights and tips for maintaining and enhancing your code’s longevity and performance over time.
-      </p>
+    </div>
+    <div className={styles.box}>
+      <h2>Step 4</h2>
+      <p>Relax</p>
     </div>
   </div>
 </div>
