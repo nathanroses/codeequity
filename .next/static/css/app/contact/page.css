@@ -1,0 +1,80 @@
+/*!********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/.pnpm/next@14.0.4_react-dom@18.2.0_react@18.2.0/node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[2]!./node_modules/.pnpm/next@14.0.4_react-dom@18.2.0_react@18.2.0/node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[3]!./src/app/contact/contact.module.css ***!
+  \********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.contact_container__cCpH8 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* Center items vertically */
+  min-height: 100vh; /* Ensure container fills at least the full height */
+  padding: 40px 0; /* Top and bottom padding */
+}
+
+.contact_title__Arsm_ {
+  text-align: center;
+  margin-bottom: 20px; /* Space below title */
+}
+
+.contact_imgContainer__cVH4m {
+  width: 100%;
+  max-width: 600px; /* Max width for image container */
+  margin-bottom: 20px; /* Space below image container */
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.contact_img__Wj1Y3 {
+  object-fit: contain;
+  max-height: 150px; /* Fixed max height for image */
+  width: 100%;
+}
+
+.contact_formContainer__tNTHl {
+  width: 100%;
+  max-width: 600px; /* Max width for form container */
+  display: flex;
+  justify-content: center;
+}
+
+.contact_form___aGjp {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+}
+
+.contact_form___aGjp input,
+.contact_form___aGjp textarea {
+  padding: 20px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  background-color: var(--bgSoft);
+  color: var(--text);
+}
+
+.contact_form___aGjp button {
+  padding: 20px;
+  background-color: var(--btn);
+  color: var(--text);
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .contact_container__cCpH8 {
+    padding: 20px 0; /* Reduced padding for smaller screens */
+  }
+
+  .contact_imgContainer__cVH4m, .contact_formContainer__tNTHl {
+    max-width: 100%; /* Full width on smaller screens */
+  }
+
+  .contact_img__Wj1Y3 {
+    max-height: 200px; /* Smaller image height on smaller screens */
+  }
+}
+

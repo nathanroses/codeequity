@@ -19,19 +19,19 @@ const SystemPage = () => {
   <div className={styles.boxes}>
     <div className={styles.box}>
       <h2>Step 1</h2>
-      <p>Send Us Your Code</p>
+      <p className={styles.desc}>Send Us Your Code</p>
     </div>
     <div className={styles.box}>
-      <h2>Step 2</h2>
-      <p>Reviewed by Intelligent Grading System w/ Expert Review</p>
+    <h2>Step 2</h2>
+      <p className={styles.desc}>Intelligent Grading System Reviewed by Expert</p>
     </div>
     <div className={styles.box}>
       <h2>Step 3</h2>
-      <p>Receive Your Code Evaluation</p>
+      <p className={styles.desc}>Receive Your Code Evaluation</p>
     </div>
     <div className={styles.box}>
-      <h2>Step 4</h2>
-      <p>Relax</p>
+      <h2 className={styles.desc}>Step 4</h2>
+      <p>Repeat</p>
     </div>
   </div>
 </div>

@@ -10,6 +10,7 @@ const ContactPage = () => {
   return (
     <div className={styles.container}>
       <h1 className={styles.title}>Send Us Your Digital Asset</h1> 
+      <p className={styles.title}>Once you Submit Your Request Will Recieve Your Evaluation by Email</p>
       <div className={styles.imgContainer}>
         <Image src="/contact.png" alt="Contact Image" fill className={styles.img} />
       </div>
