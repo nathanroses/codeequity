@@ -4,12 +4,13 @@ import { NextResponse } from "next/server";
 
 export const GET = async (request) => {
   try {
-    connectToDb();
+    // Wait for the database connection to be established
+    await connectToDb();
 
     const posts = await Post.find();
     return NextResponse.json(posts);
   } catch (err) {
-    console.log(err);
-    throw new Error("Failed to fetch posts!");
+    console.error(err);
+    return new Response("Failed to fetch posts!", { status: 500 });
   }
 };
