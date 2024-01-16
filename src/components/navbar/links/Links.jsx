@@ -8,19 +8,19 @@ import { handleLogout } from "@/lib/action";
 
 const links = [
   {
-    title: "Homepage",
+    title: "Home",
     path: "/",
   },
   {
-    title: "About",
+    title: "Blueprint",
     path: "/about",
   },
   {
-    title: "Contact",
+    title: "Submit Evaluation",
     path: "/contact",
   },
   {
-    title: "Blog",
+    title: "Updates",
     path: "/blog",
   },
 ];

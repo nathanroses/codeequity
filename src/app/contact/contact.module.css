@@ -1,27 +1,44 @@
 .container {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  gap: 100px;
+  justify-content: center; /* Center items vertically */
+  min-height: 100vh; /* Ensure container fills at least the full height */
+  padding: 40px 0; /* Top and bottom padding */
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 20px; /* Space below title */
 }
 
 .imgContainer {
-  flex: 1;
-  height: 500px;
+  width: 100%;
+  max-width: 600px; /* Max width for image container */
+  margin-bottom: 20px; /* Space below image container */
   position: relative;
+  display: flex;
+  justify-content: center;
 }
 
 .img {
   object-fit: contain;
+  max-height: 150px; /* Fixed max height for image */
+  width: 100%;
 }
 
 .formContainer {
-  flex: 1;
+  width: 100%;
+  max-width: 600px; /* Max width for form container */
+  display: flex;
+  justify-content: center;
 }
 
 .form {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  width: 100%;
 }
 
 .form input,
@@ -46,6 +63,14 @@
 
 @media (max-width: 768px) {
   .container {
-    flex-direction: column;
+    padding: 20px 0; /* Reduced padding for smaller screens */
+  }
+
+  .imgContainer, .formContainer {
+    max-width: 100%; /* Full width on smaller screens */
+  }
+
+  .img {
+    max-height: 200px; /* Smaller image height on smaller screens */
   }
 }

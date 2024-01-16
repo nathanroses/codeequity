@@ -7,7 +7,7 @@ const Home = () => {
       <div className={styles.textContainer}>
         <h1 className={styles.title}>Evaluate Digital Assets</h1>
         <p className={styles.desc}>
-        Code Equity is Pioneering precise and trustworthy digital asset evaluations to empower your technological investments.
+        Code Equity is the first to offer precise evaluations of digital assets, ensuring investors make informed decisions with confidence.
         </p>
         <div className={styles.buttons}>
           <button className={styles.button}>Learn More</button>
