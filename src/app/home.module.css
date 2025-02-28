@@ -1,33 +1,44 @@
+:root {
+  --gap-large: 2rem;
+  --gap-medium: 1.5rem;
+  --gap-small: 1rem;
+  --font-large: 4.5rem;
+  --font-medium: 1.25rem;
+  --font-small: 0.875rem;
+  --color-primary: #4961DD;
+  --color-secondary: #666666;
+}
+
 .container {
   display: flex;
-  gap: 2rem; /* Reduced gap for better responsiveness */
-  flex-wrap: wrap; /* Allow wrapping for better responsiveness */
+  gap: var(--gap-large);
+  flex-wrap: wrap;
 }
 
 .textContainer {
   flex: 1;
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: var(--gap-medium);
 }
 
 .title {
-  font-size: 4.5rem;
+  font-size: var(--font-large);
   padding: 0.5rem;
 }
 
 .highlight {
-  color: #4961DD;
+  color: var(--color-primary);
 }
 
 .desc {
-  font-size: 1.25rem;
+  font-size: var(--font-medium);
 }
 
 .statsRow {
   display: flex;
-  gap: 1.5rem;
-  flex-wrap: wrap; /* Allow wrapping for better responsiveness */
+  gap: var(--gap-medium);
+  flex-wrap: wrap;
 }
 
 .statsItem {
@@ -39,18 +50,18 @@
 .statsNumber {
   font-size: 3rem;
   font-weight: 700;
-  color: #4961DD;
+  color: var(--color-primary);
 }
 
 .statsLabel {
-  font-size: 0.875rem;
-  color: #666666;
+  font-size: var(--font-small);
+  color: var(--color-secondary);
   font-weight: 500;
 }
 
 .buttons {
   display: flex;
-  gap: 1rem;
+  gap: var(--gap-small);
 }
 
 .button {
@@ -67,8 +78,8 @@
 }
 
 .trustedText {
-  font-size: 0.875rem;
-  color: #666666;
+  font-size: var(--font-small);
+  color: var(--color-secondary);
   letter-spacing: 1px;
   margin-bottom: 1rem;
 }
@@ -106,6 +117,6 @@
   }
 
   .statsRow {
-    gap: 1rem;
+    gap: var(--gap-small);
   }
 }
