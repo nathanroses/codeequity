@@ -1,186 +1,88 @@
-.container {
-  display: flex;
-  gap: 100px;
-}
+/* Add these styles to your existing CSS file */
 
-.textContainer {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  gap: 50px;
-}
-
-.title {
-  font-size: 75px;
-  padding: 5px;
-  line-height: 1.1;
-}
-
+/* Add styling for highlighted text */
 .highlight {
   color: #4961DD;
 }
 
-.desc {
-  font-size: 20px;
-  line-height: 1.6;
-  color: #4a5568;
-}
-
-/* Stats section */
-.stats {
+/* Statistics styles */
+.statsRow {
   display: flex;
-  gap: 50px;
+  gap: 40px;
 }
 
-.stat {
+.statsItem {
   display: flex;
   flex-direction: column;
-  gap: 4px;
+  gap: 5px;
 }
 
-.statNumber {
+.statsNumber {
   font-size: 48px;
   font-weight: 700;
   color: #4961DD;
 }
 
-.statLabel {
+.statsLabel {
   font-size: 14px;
+  color: #666666;
   font-weight: 500;
-  color: #666;
-  letter-spacing: 0.5px;
 }
 
-.buttons {
-  display: flex;
-  gap: 20px;
-}
-
-.button {
-  padding: 20px;
-  min-width: 120px;
-  cursor: pointer;
-  border: none;
-  border-radius: 5px;
-  font-weight: 600;
-  transition: transform 0.2s ease;
-}
-
-.button:hover {
-  transform: translateY(-2px);
-}
-
-.button:first-child {
-  background-color: var(--btn, #4961DD);
-  color: var(--text, white);
-}
-
-.button:nth-child(2) {
-  background-color: transparent;
-  border: 2px solid var(--btn, #4961DD);
-  color: var(--btn, #4961DD);
-}
-
-.trustedSection {
-  margin-top: 10px;
-}
-
+/* Trusted by text */
 .trustedText {
   font-size: 14px;
+  color: #666666;
   letter-spacing: 1px;
-  color: #718096;
-  margin-bottom: 16px;
+  margin-bottom: 15px;
 }
 
-.brands {
-  width: 500px;
-  height: 50px;
-  position: relative;
-  filter: grayscale(1);
-}
-
-.imgContainer {
-  flex: 1;
-  position: relative;
-}
-
-/* Testimonial styling */
-.testimonial {
+/* Testimonial card */
+.testimonialCard {
   position: absolute;
   top: 50px;
   right: 50px;
   background-color: white;
-  padding: 24px;
-  border-radius: 12px;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   max-width: 300px;
   z-index: 2;
-}
-
-.testimonialText {
   font-size: 16px;
-  font-style: italic;
-  color: #2d3748;
-  line-height: 1.6;
-  margin-bottom: 16px;
+  line-height: 1.5;
 }
 
-.testimonialAuthor {
-  display: flex;
-  flex-direction: column;
-  gap: 2px;
-}
-
-.authorName {
+.testimonialName {
   font-weight: 600;
-  color: #2d3748;
+  margin-top: 15px;
 }
 
-.authorTitle {
+.testimonialTitle {
   font-size: 14px;
-  color: #718096;
+  color: #666666;
 }
 
+/* Media query additions */
 @media (max-width: 1024px) {
-  .container {
-    flex-direction: column;
-    text-align: center;
-  }
-  
-  .buttons {
+  .statsRow {
     justify-content: center;
   }
   
-  .stats {
-    justify-content: center;
-  }
-  
-  .testimonial {
+  .testimonialCard {
     position: relative;
-    margin: 20px auto;
-    top: 0;
+    top: 20px;
     right: 0;
+    margin: 0 auto 30px auto;
   }
   
-  .trustedSection {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  .trustedText {
+    text-align: center;
   }
 }
 
 @media (max-width: 768px) {
-  .title {
-    font-size: 64px;
-  }
-  
-  .brands {
-    width: 100%;
-  }
-  
-  .stats {
+  .statsRow {
     flex-wrap: wrap;
-    justify-content: center;
     gap: 30px;
   }
 }
