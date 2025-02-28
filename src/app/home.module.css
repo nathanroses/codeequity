@@ -1,6 +1,10 @@
 .container {
   display: flex;
   gap: 100px;
+  padding: 40px 20px;
+  background: linear-gradient(135deg, #f8f9ff 0%, #eef1f9 100%);
+  min-height: 80vh;
+  align-items: center;
 }
 
 .textContainer {
@@ -10,38 +14,121 @@
   gap: 50px;
 }
 
-.title{
+.title {
   font-size: 75px;
   padding: 5px;
+  line-height: 1.1;
+  position: relative;
+  color: #1a1e2c;
+  font-weight: 800;
+  margin: 0;
 }
 
-.desc{
+.title span {
+  color: var(--btn, #3d5afe);
+  position: relative;
+  display: inline-block;
+}
+
+.title span::after {
+  content: "";
+  position: absolute;
+  bottom: 12px;
+  left: 0;
+  width: 100%;
+  height: 10px;
+  background-color: rgba(61, 90, 254, 0.1);
+  z-index: -1;
+}
+
+.desc {
   font-size: 20px;
+  line-height: 1.6;
+  color: #4a5568;
+  max-width: 600px;
 }
 
-.buttons{
+.statGrid {
+  display: flex;
+  gap: 40px;
+  margin-top: -20px;
+}
+
+.statItem {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.statNumber {
+  font-size: 36px;
+  font-weight: 700;
+  color: var(--btn, #3d5afe);
+}
+
+.statLabel {
+  font-size: 14px;
+  font-weight: 500;
+  color: #666;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.buttons {
   display: flex;
   gap: 20px;
 }
 
-.button{
+.button {
   padding: 20px;
   min-width: 120px;
   cursor: pointer;
   border: none;
   border-radius: 5px;
+  font-weight: 600;
+  transition: all 0.2s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
 
-.button:first-child{
-  background-color: var(--btn);
-  color: var(--text);
+.button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
 }
 
-.brands{
+.button:first-child {
+  background-color: var(--btn, #3d5afe);
+  color: var(--text, white);
+}
+
+.button:nth-child(2) {
+  background-color: transparent;
+  border: 2px solid var(--btn, #3d5afe);
+  color: var(--btn, #3d5afe);
+}
+
+.trustedByTitle {
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #718096;
+  margin-bottom: 16px;
+  margin-top: -30px;
+}
+
+.brands {
   width: 500px;
   height: 50px;
   position: relative;
   filter: grayscale(1);
+  transition: filter 0.3s ease;
+}
+
+.brands:hover {
+  filter: grayscale(0.5);
+}
+
+.brandImg {
+  object-fit: contain;
 }
 
 .imgContainer {
@@ -49,14 +136,85 @@
   position: relative;
 }
 
+.imgContainer::before {
+  content: "";
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, rgba(61, 90, 254, 0.1) 0%, rgba(61, 90, 254, 0.05) 100%);
+  top: -60px;
+  right: -80px;
+  z-index: 0;
+}
+
+.heroImg {
+  border-radius: 16px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+  position: relative;
+}
+
+.testimonial {
+  background-color: white;
+  padding: 24px;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+  position: absolute;
+  bottom: 40px;
+  left: 20px;
+  max-width: 300px;
+  z-index: 2;
+}
+
+.testimonialText {
+  font-size: 16px;
+  font-style: italic;
+  color: #2d3748;
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+
+.testimonialAuthor {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.authorName {
+  font-weight: 600;
+  color: #2d3748;
+}
+
+.authorTitle {
+  font-size: 14px;
+  color: #718096;
+}
+
 @media (max-width: 1024px) {
   .container {
     flex-direction: column;
     text-align: center;
   }
-
-  .buttons{
+  
+  .buttons {
     justify-content: center;
+  }
+  
+  .statGrid {
+    justify-content: center;
+  }
+  
+  .desc {
+    margin: 0 auto;
+  }
+  
+  .testimonial {
+    position: relative;
+    margin: 20px auto;
+    left: 0;
+    bottom: 0;
+    max-width: 400px;
   }
 }
 
@@ -64,9 +222,33 @@
   .title {
     font-size: 64px;
   }
-
-  .brands{
+  
+  .brands {
     width: 100%;
+  }
+  
+  .statGrid {
+    flex-wrap: wrap;
+    gap: 20px;
   }
 }
 
+@media (max-width: 480px) {
+  .title {
+    font-size: 48px;
+  }
+  
+  .statGrid {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .buttons {
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .button {
+    width: 100%;
+  }
+}
