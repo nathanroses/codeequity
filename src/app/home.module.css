@@ -1,11 +1,28 @@
-/* Add these styles to your existing CSS file */
+.container {
+  display: flex;
+  gap: 100px;
+}
 
-/* Add styling for highlighted text */
+.textContainer {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.title{
+  font-size: 75px;
+  padding: 5px;
+}
+
 .highlight {
   color: #4961DD;
 }
 
-/* Statistics styles */
+.desc{
+  font-size: 20px;
+}
+
 .statsRow {
   display: flex;
   gap: 40px;
@@ -29,7 +46,24 @@
   font-weight: 500;
 }
 
-/* Trusted by text */
+.buttons{
+  display: flex;
+  gap: 20px;
+}
+
+.button{
+  padding: 20px;
+  min-width: 120px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+}
+
+.button:first-child{
+  background-color: var(--btn);
+  color: var(--text);
+}
+
 .trustedText {
   font-size: 14px;
   color: #666666;
@@ -37,50 +71,44 @@
   margin-bottom: 15px;
 }
 
-/* Testimonial card */
-.testimonialCard {
-  position: absolute;
-  top: 50px;
-  right: 50px;
-  background-color: white;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-  max-width: 300px;
-  z-index: 2;
-  font-size: 16px;
-  line-height: 1.5;
+.brands{
+  width: 500px;
+  height: 50px;
+  position: relative;
+  filter: grayscale(1);
 }
 
-.testimonialName {
-  font-weight: 600;
-  margin-top: 15px;
+.imgContainer {
+  flex: 1;
+  position: relative;
 }
 
-.testimonialTitle {
-  font-size: 14px;
-  color: #666666;
-}
+/* No testimonial positioning at all - removing this feature */
 
-/* Media query additions */
 @media (max-width: 1024px) {
-  .statsRow {
+  .container {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .buttons{
     justify-content: center;
   }
   
-  .testimonialCard {
-    position: relative;
-    top: 20px;
-    right: 0;
-    margin: 0 auto 30px auto;
-  }
-  
-  .trustedText {
-    text-align: center;
+  .statsRow {
+    justify-content: center;
   }
 }
 
 @media (max-width: 768px) {
+  .title {
+    font-size: 64px;
+  }
+  
+  .brands{
+    width: 100%;
+  }
+  
   .statsRow {
     flex-wrap: wrap;
     gap: 30px;
