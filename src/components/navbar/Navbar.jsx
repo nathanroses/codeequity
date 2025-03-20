@@ -1,11 +1,12 @@
-import { useState, useEffect } from "react";
+// This remains a Server Component (no "use client" directive)
 import Link from "next/link";
 import Image from "next/image";
 import styles from "./navbar.module.css";
 import { auth } from "@/lib/auth";
-import Links from "./links/Links";
+import ClientLinks from "./links/ClientLinks"; // We'll rename the client component
 
 const Navbar = async () => {
+  // This can only run on the server
   const session = await auth();
 
   return (
@@ -23,7 +24,7 @@ const Navbar = async () => {
           </div>
         </Link>
         
-        <Links session={session} />
+        <ClientLinks session={session} />
       </div>
     </div>
   );
