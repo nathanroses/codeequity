@@ -5,7 +5,6 @@ import styles from "./links.module.css";
 import NavLink from "./navLink/navLink";
 import Image from "next/image";
 import { handleLogout } from "@/lib/action";
-import { motion, AnimatePresence } from "framer-motion";
 
 const links = [
   {
@@ -48,33 +47,6 @@ const Links = ({ session }) => {
 
   const closeMenu = () => {
     setOpen(false);
-  };
-
-  // Variants for animations
-  const mobileMenuVariants = {
-    closed: {
-      opacity: 0,
-      y: -20,
-      x: "100%",
-      transition: {
-        y: { stiffness: 1000 }
-      }
-    },
-    open: {
-      opacity: 1,
-      y: 0,
-      x: 0,
-      transition: {
-        duration: 0.3,
-        staggerChildren: 0.05,
-        delayChildren: 0.1
-      }
-    }
-  };
-
-  const menuItemVariants = {
-    closed: { y: 20, opacity: 0 },
-    open: { y: 0, opacity: 1 }
   };
 
   return (
@@ -137,60 +109,53 @@ const Links = ({ session }) => {
         </button>
       </div>
       
-      <AnimatePresence>
-        {open && (
-          <motion.div 
-            className={styles.mobileLinks}
-            initial="closed"
-            animate="open"
-            exit="closed"
-            variants={mobileMenuVariants}
-          >
-            <div className={styles.mobileLinksContent}>
-              {links.map((link) => (
-                <motion.div key={link.title} variants={menuItemVariants}>
+      {/* Simple non-animated mobile menu */}
+      {open && (
+        <div className={styles.mobileLinks}>
+          <div className={styles.mobileLinksContent}>
+            {links.map((link) => (
+              <div key={link.title}>
+                <NavLink 
+                  item={link} 
+                  onClick={closeMenu} 
+                  mobile={true}
+                />
+              </div>
+            ))}
+            
+            {session?.user ? (
+              <div className={styles.mobileUserSection}>
+                {session.user?.isAdmin && (
                   <NavLink 
-                    item={link} 
-                    onClick={closeMenu} 
-                    mobile={true}
-                  />
-                </motion.div>
-              ))}
-              
-              {session?.user ? (
-                <motion.div variants={menuItemVariants} className={styles.mobileUserSection}>
-                  {session.user?.isAdmin && (
-                    <NavLink 
-                      item={{ title: "Admin", path: "/admin" }} 
-                      onClick={closeMenu}
-                      mobile={true}
-                    />
-                  )}
-                  <form action={handleLogout}>
-                    <button className={styles.mobileLogout}>
-                      <span>Logout</span>
-                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                        <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path>
-                        <polyline points="16 17 21 12 16 7"></polyline>
-                        <line x1="21" y1="12" x2="9" y2="12"></line>
-                      </svg>
-                    </button>
-                  </form>
-                </motion.div>
-              ) : (
-                <motion.div variants={menuItemVariants}>
-                  <NavLink 
-                    item={{ title: "Client Login", path: "/login" }} 
+                    item={{ title: "Admin", path: "/admin" }} 
                     onClick={closeMenu}
                     mobile={true}
-                    highlight={true}
                   />
-                </motion.div>
-              )}
-            </div>
-          </motion.div>
-        )}
-      </AnimatePresence>
+                )}
+                <form action={handleLogout}>
+                  <button className={styles.mobileLogout}>
+                    <span>Logout</span>
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                      <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path>
+                      <polyline points="16 17 21 12 16 7"></polyline>
+                      <line x1="21" y1="12" x2="9" y2="12"></line>
+                    </svg>
+                  </button>
+                </form>
+              </div>
+            ) : (
+              <div>
+                <NavLink 
+                  item={{ title: "Client Login", path: "/login" }} 
+                  onClick={closeMenu}
+                  mobile={true}
+                  highlight={true}
+                />
+              </div>
+            )}
+          </div>
+        </div>
+      )}
     </div>
   );
 };
