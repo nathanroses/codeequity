@@ -1,98 +1,478 @@
 .container {
   display: flex;
+  flex-direction: column;
   gap: 80px;
+  padding: 40px 0;
 }
 
-.textContainer {
-  flex: 1;
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 60px 20px;
+  background: radial-gradient(circle at center, rgba(77, 102, 203, 0.15) 0%, rgba(13, 12, 34, 0) 70%);
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+
+.heroTitle {
+  font-size: 52px;
+  font-weight: 800;
+  line-height: 1.2;
+  margin-bottom: 24px;
+}
+
+.gradientText {
+  background: linear-gradient(90deg, #4d66cb, #7e8fff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.heroSubtitle {
+  font-size: 20px;
+  max-width: 700px;
+  margin: 0 auto;
+  color: var(--textSoft);
+}
+
+/* Process Flow Section */
+.processContainer {
+  padding: 40px 0;
+}
+
+.processTitle {
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 60px;
+  position: relative;
+}
+
+.processTitle::after {
+  content: '';
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(90deg, #4d66cb, #7e8fff);
+  border-radius: 2px;
+}
+
+.processFlow {
   display: flex;
   flex-direction: column;
+  gap: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.processStep {
+  display: flex;
+  gap: 20px;
+  position: relative;
+  z-index: 1;
+}
+
+.stepNumber {
+  font-size: 24px;
+  font-weight: 800;
+  color: var(--btn);
+  background-color: rgba(77, 102, 203, 0.1);
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  border: 2px solid rgba(77, 102, 203, 0.3);
+}
+
+.stepContent {
+  flex: 1;
+  background-color: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.stepContent:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+.stepIcon {
+  width: 48px;
+  height: 48px;
+  background-color: rgba(77, 102, 203, 0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+
+.stepIcon svg {
+  width: 24px;
+  height: 24px;
+  color: var(--btn);
+}
+
+.stepTitle {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.stepDescription {
+  color: var(--textSoft);
+  line-height: 1.6;
+}
+
+.processConnector {
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  z-index: 0;
+}
+
+/* Technology Section */
+.techSection {
+  display: flex;
+  gap: 60px;
+  align-items: center;
+  padding: 40px 0;
+}
+
+.techContent {
+  flex: 1;
+}
+
+.techTitle {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.techDescription {
+  color: var(--textSoft);
+  line-height: 1.7;
+  margin-bottom: 40px;
+  font-size: 18px;
+}
+
+.techFeatures {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   gap: 30px;
 }
 
-.subtitle {
-  color: var(--btn);
-  font-size: 22px;
-  margin-bottom: 15px;
-}
-
-.title {
-  font-size: 40px;
-  line-height: 1.2;
+.techFeature {
+  position: relative;
   padding: 20px;
-  text-align: center;
+  background-color: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.desc {
-  font-size: 18px;
-  font-weight: 300;
-  line-height: 1.5;
-  text-align: center;
+.techFeature:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
 }
 
-.boxes {
+.featureIcon {
+  width: 40px;
+  height: 40px;
+  background-color: rgba(77, 102, 203, 0.1);
+  border-radius: 50%;
   display: flex;
-  flex-direction: column; /* Adjusted to stack steps vertically */
-  gap: 15px; /* Added gap between steps */
-  align-items: center; /* Center step titles */
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
 }
 
-.box {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-}
-
-.box h2 {
+.featureIcon svg {
+  width: 20px;
+  height: 20px;
   color: var(--btn);
-  font-size: 26px;
-  font-weight: bold;
-  margin: 0; /* Removed margin to make step titles even */
-  padding-bottom: 10px; /* Added padding between step titles */
 }
 
-.box p {
+.techFeature h3 {
   font-size: 18px;
-  color: #ffffff;
-  margin: 0; /* Removed margin to make step titles even */
+  font-weight: 700;
+  margin-bottom: 10px;
 }
 
-.stepDesc {
-  font-size: 13px;
-  color: #414cc1;
-  font-weight: 300;
+.techFeature p {
+  color: var(--textSoft);
+  font-size: 14px;
   line-height: 1.5;
 }
 
-.imgContainer {
+.techImageContainer {
   flex: 1;
   position: relative;
-  display: flex; /* Center image within its container */
-  justify-content: center; /* Center image horizontally */
-  align-items: center; /* Center image vertically */
+  height: 500px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
 }
 
-.img {
-  object-fit: contain;
+.techImage {
+  object-fit: cover;
+}
+
+.imageOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(77, 102, 203, 0.2) 0%, rgba(13, 12, 34, 0.5) 100%);
+  pointer-events: none;
+}
+
+/* Testimonial Section */
+.testimonial {
+  background: linear-gradient(135deg, rgba(13, 12, 34, 0.95) 0%, rgba(45, 43, 66, 0.95) 100%);
+  border-radius: 20px;
+  padding: 60px 40px;
+  margin: 40px 0;
+  position: relative;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
+}
+
+.testimonialContent {
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.quoteIcon {
+  position: absolute;
+  top: -20px;
+  left: -30px;
+}
+
+.testimonialText {
+  font-size: 22px;
+  line-height: 1.7;
+  color: var(--text);
+  margin-bottom: 30px;
+  font-style: italic;
+}
+
+.testimonialAuthor {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.authorAvatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 2px solid var(--btn);
+}
+
+.avatarImage {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.authorInfo h4 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.authorInfo p {
+  color: var(--textSoft);
+  font-size: 14px;
+}
+
+/* CTA Section */
+.ctaSection {
+  text-align: center;
+  padding: 80px 40px;
+  background: radial-gradient(circle at center, rgba(77, 102, 203, 0.15) 0%, rgba(13, 12, 34, 0) 70%);
+  border-radius: 20px;
+  margin-top: 20px;
+}
+
+.ctaSection h2 {
+  font-size: 36px;
+  font-weight: 800;
+  margin-bottom: 16px;
+}
+
+.ctaSection p {
+  color: var(--textSoft);
+  font-size: 18px;
+  margin-bottom: 40px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.ctaButton {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background-color: var(--btn);
+  color: var(--text);
+  font-size: 18px;
+  font-weight: 600;
+  padding: 16px 32px;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 10px 20px rgba(77, 102, 203, 0.3);
+}
+
+.ctaButton svg {
+  width: 20px;
+  height: 20px;
+  transition: transform 0.3s ease;
+}
+
+.ctaButton:hover {
+  background-color: #5a74e3;
+  transform: translateY(-3px);
+  box-shadow: 0 15px 30px rgba(77, 102, 203, 0.4);
+}
+
+.ctaButton:hover svg {
+  transform: translateX(5px);
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .heroTitle {
+    font-size: 42px;
+  }
+  
+  .techSection {
+    flex-direction: column;
+  }
+  
+  .techImageContainer {
+    width: 100%;
+    height: 400px;
+    order: -1;
+  }
+  
+  .testimonialText {
+    font-size: 20px;
+  }
 }
 
 @media (max-width: 768px) {
   .container {
-    flex-direction: column;
-    text-align: center;
-    gap: 50px;
+    gap: 60px;
   }
+  
+  .heroTitle {
+    font-size: 36px;
+  }
+  
+  .heroSubtitle {
+    font-size: 18px;
+  }
+  
+  .processTitle {
+    font-size: 30px;
+  }
+  
+  .stepTitle {
+    font-size: 20px;
+  }
+  
+  .techFeatures {
+    grid-template-columns: 1fr;
+  }
+  
+  .testimonial {
+    padding: 40px 20px;
+  }
+  
+  .quoteIcon {
+    width: 36px;
+    height: 36px;
+    top: -10px;
+    left: -10px;
+  }
+  
+  .testimonialText {
+    font-size: 18px;
+  }
+  
+  .ctaSection h2 {
+    font-size: 30px;
+  }
+  
+  .ctaSection p {
+    font-size: 16px;
+  }
+  
+  .ctaButton {
+    font-size: 16px;
+    padding: 14px 28px;
+  }
+}
 
-  .boxes {
-    flex-direction: column;
+@media (max-width: 480px) {
+  .container {
     gap: 40px;
   }
-
-  .textContainer {
-    align-items: center; /* Center text container content horizontally */
+  
+  .hero {
+    padding: 40px 16px;
   }
-
-  .title, .desc {
+  
+  .heroTitle {
+    font-size: 30px;
+  }
+  
+  .heroSubtitle {
+    font-size: 16px;
+  }
+  
+  .processStep {
+    flex-direction: column;
+    align-items: center;
     text-align: center;
+  }
+  
+  .stepContent {
+    width: 100%;
+  }
+  
+  .techTitle {
+    font-size: 28px;
+  }
+  
+  .techDescription {
+    font-size: 16px;
+  }
+  
+  .testimonialText {
+    font-size: 16px;
+  }
+  
+  .ctaSection {
+    padding: 60px 20px;
+  }
+  
+  .ctaSection h2 {
+    font-size: 26px;
   }
 }
