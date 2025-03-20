@@ -82,36 +82,10 @@ const SystemPage = () => {
             </svg>
           </div>
 
+
+
           <div className={styles.processStep}>
             <div className={styles.stepNumber}>03</div>
-            <div className={styles.stepContent}>
-              <div className={styles.stepIcon}>
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                  <circle cx="12" cy="12" r="10"></circle>
-                  <polyline points="12 6 12 12 16 14"></polyline>
-                </svg>
-              </div>
-              <h3 className={styles.stepTitle}>Expert Human Review</h3>
-              <p className={styles.stepDescription}>
-                Our team of industry experts reviews the AI findings, adding contextual insights and expert observations to ensure comprehensive evaluation.
-              </p>
-            </div>
-          </div>
-
-          <div className={styles.processConnector}>
-            <svg width="20" height="80" viewBox="0 0 20 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M10 0V70M10 70L2 62M10 70L18 62" stroke="url(#gradient)" strokeWidth="2"/>
-              <defs>
-                <linearGradient id="gradient" x1="10" y1="0" x2="10" y2="80" gradientUnits="userSpaceOnUse">
-                  <stop stopColor="#4d66cb" stopOpacity="0.2"/>
-                  <stop offset="1" stopColor="#4d66cb"/>
-                </linearGradient>
-              </defs>
-            </svg>
-          </div>
-
-          <div className={styles.processStep}>
-            <div className={styles.stepNumber}>04</div>
             <div className={styles.stepContent}>
               <div className={styles.stepIcon}>
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
