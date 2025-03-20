@@ -10,9 +10,9 @@ const AboutPage = () => {
   return (
     <div className={styles.container}>
       <div className={styles.textContainer}>
-        <span className={styles.subtitle}>About Us</span>
+        <span className={styles.subtitle}>Our Mission</span>
         <h1 className={styles.title}>
-          Revolutionizing Digital Asset Evaluation with Precision and Expertise
+          Illuminating Digital Value Through Evaluation 
         </h1>
         <p className={styles.desc}>
           At the forefront of digital asset valuation, we blend advanced AI with expert analysis to redefine evaluation standards. Our commitment to precision and innovation guides our journey in becoming the global leader in digital asset assessment.
