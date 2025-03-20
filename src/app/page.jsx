@@ -103,7 +103,7 @@ const Home = () => {
           </div>
           <div className={styles.testimonialAuthor}>
             <div className={styles.testimonialAvatar}>
-              <Image src="/avatar.png" alt="Sarah Chen" width={48} height={48} className={styles.avatarImg} />
+              <Image src="/public/noavatar.png" alt="Sarah Chen" width={48} height={48} className={styles.avatarImg} />
             </div>
             <div>
               <div className={styles.testimonialName}>Sarah Chen</div>
